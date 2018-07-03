@@ -7,7 +7,7 @@ namespace BertoniServices
     [ServiceContract]
     public interface IUserService
     {
-        [OperationContract(Name = "Usuarios")]
+        [OperationContract(Name = "users")]
         [WebGet(RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         UsuarioCollection GetUsuarios();
     }

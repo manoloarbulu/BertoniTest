@@ -65,5 +65,17 @@ namespace BertoniApi
         public bool IsReadOnly => false;
 
         #endregion
+
+        public CommentCollection PhotoComments(int id)
+        {
+            var result = new CommentCollection();
+            foreach (var comment in _comments)
+            {
+                if (comment.PostId == id)
+                    result.Add(comment);
+            }
+
+            return result;
+        }
     }
 }

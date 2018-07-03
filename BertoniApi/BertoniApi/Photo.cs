@@ -13,8 +13,12 @@ namespace BertoniApi
         [DataMember(Name = "id", EmitDefaultValue = false, IsRequired = true)]
         public int Id { get; set; }
 
+        [DataMember(Name = "title", EmitDefaultValue = false, IsRequired = true)]
+        public string Title { get; set; }
+
         [DataMember(Name = "url", EmitDefaultValue = false, IsRequired = true)]
-        protected internal string BaseUrl {
+        protected internal string BaseUrl
+        {
             get => Url.AbsolutePath;
             set => Url = new Uri(value);
         }
