@@ -11,7 +11,6 @@ namespace BertoniApi
     {
         private readonly List<Comment> _comments = new List<Comment>();
 
-        [DataMember]
         public Comment this[int index]
         {
             get => _comments[index];
