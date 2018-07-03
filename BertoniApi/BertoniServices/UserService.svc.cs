@@ -3,7 +3,6 @@ using BertoniApi;
 
 namespace BertoniServices
 {
-    [ServiceContract(Name = "Usuarios")]
     public class UserService : IUserService
     {
         #region Implementation of IUserService
