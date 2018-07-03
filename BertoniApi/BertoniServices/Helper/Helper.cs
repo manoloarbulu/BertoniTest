@@ -1,5 +1,6 @@
 ﻿using System.IO;
-using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
+using System.Text;
 using BertoniApi;
 using BertoniServices.Properties;
 
@@ -14,8 +15,9 @@ namespace BertoniServices.Helper
 
         private static UsuarioCollection LoadUsers()
         {
-            var stream = new MemoryStream(Resources.Users);
-            var serializer = new DataContractSerializer(typeof(UsuarioCollection));
+            var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.Users));
+            var serializer = new DataContractJsonSerializer(typeof(UsuarioCollection));
+            stream.Position = 0;
             var usuarios = (UsuarioCollection) serializer.ReadObject(stream);
             stream.Close();
             return usuarios;
@@ -23,8 +25,9 @@ namespace BertoniServices.Helper
 
         private static AlbumCollection LoadAlbumes()
         {
-            var stream = new MemoryStream(Resources.Albums);
-            var serializer = new DataContractSerializer(typeof(AlbumCollection));
+            var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.Albums));
+            var serializer = new DataContractJsonSerializer(typeof(AlbumCollection));
+            stream.Position = 0;
             var albumes = (AlbumCollection)serializer.ReadObject(stream);
             stream.Close();
             return albumes;
@@ -32,8 +35,9 @@ namespace BertoniServices.Helper
 
         private static PhotoCollection LoadPhotos()
         {
-            var stream = new MemoryStream(Resources.Photos);
-            var serializer = new DataContractSerializer(typeof(AlbumCollection));
+            var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.Photos));
+            var serializer = new DataContractJsonSerializer(typeof(PhotoCollection));
+            stream.Position = 0;
             var photos = (PhotoCollection)serializer.ReadObject(stream);
             stream.Close();
             return photos;
@@ -41,8 +45,9 @@ namespace BertoniServices.Helper
 
         private static CommentCollection LoadComments()
         {
-            var stream = new MemoryStream(Resources.Comments);
-            var serializer = new DataContractSerializer(typeof(AlbumCollection));
+            var stream = new MemoryStream(Encoding.UTF8.GetBytes(Resources.Comments));
+            var serializer = new DataContractJsonSerializer(typeof(CommentCollection));
+            stream.Position = 0;
             var comments = (CommentCollection)serializer.ReadObject(stream);
             stream.Close();
             return comments;
