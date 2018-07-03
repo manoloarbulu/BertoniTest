@@ -11,6 +11,13 @@ namespace BertoniApi
     {
         private readonly List<Comment> _comments = new List<Comment>();
 
+        [DataMember]
+        public Comment this[int index]
+        {
+            get => _comments[index];
+            set => _comments[index] = value;
+        }
+
         #region Implementation of IEnumerable
 
         public IEnumerator<Comment> GetEnumerator()

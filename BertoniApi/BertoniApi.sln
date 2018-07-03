@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BertoniApi", "BertoniApi\Be
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BertoniServices", "BertoniServices\BertoniServices.csproj", "{74E82A6F-6711-466D-84F5-8E31EF174DC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BertoniAppTests", "BertoniAppTests\BertoniAppTests.csproj", "{84FC1089-4205-4698-9293-19C457F1EDE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{74E82A6F-6711-466D-84F5-8E31EF174DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74E82A6F-6711-466D-84F5-8E31EF174DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74E82A6F-6711-466D-84F5-8E31EF174DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84FC1089-4205-4698-9293-19C457F1EDE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84FC1089-4205-4698-9293-19C457F1EDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84FC1089-4205-4698-9293-19C457F1EDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84FC1089-4205-4698-9293-19C457F1EDE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

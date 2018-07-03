@@ -11,6 +11,13 @@ namespace BertoniApi
     {
         private readonly List<Album> _albumes = new List<Album>();
 
+        [DataMember]
+        public Album this[int index]
+        {
+            get => _albumes[index];
+            set => _albumes[index] = value;
+        }
+
         #region Implementation of IEnumerable
 
         public IEnumerator<Album> GetEnumerator()
