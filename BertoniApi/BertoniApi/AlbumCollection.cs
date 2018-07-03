@@ -11,7 +11,6 @@ namespace BertoniApi
     {
         private readonly List<Album> _albumes = new List<Album>();
 
-        [DataMember]
         public Album this[int index]
         {
             get => _albumes[index];

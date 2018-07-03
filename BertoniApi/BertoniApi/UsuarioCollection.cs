@@ -11,7 +11,6 @@ namespace BertoniApi
     {
         private readonly List<Usuario> _usuarios = new List<Usuario>();
 
-        [DataMember]
         public Usuario this[int index]
         {
             get => _usuarios[index];
