@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 namespace BertoniApi
 {
     [Serializable]
-    [DataContract(Name = "Photos")]
+    [CollectionDataContract(Name = "photos")]
     public class PhotoCollection : ICollection<Photo>
     {
         private readonly List<Photo> _photos = new List<Photo>();
@@ -66,5 +66,17 @@ namespace BertoniApi
         public bool IsReadOnly => false;
 
         #endregion
+
+        public PhotoCollection AlbumPhotos(int id)
+        {
+            var result = new PhotoCollection();
+            foreach (var photo in _photos)
+            {
+                if (photo.AlbumId == id)
+                    result.Add(photo);
+            }
+
+            return result;
+        }
     }
 }

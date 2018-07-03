@@ -66,5 +66,17 @@ namespace BertoniApi
         public bool IsReadOnly => false;
 
         #endregion
+
+        public AlbumCollection UserAlbumes(int id)
+        {
+            var result = new AlbumCollection();
+            foreach (var album in _albumes)
+            {
+                if (album.UserId == id)
+                    result.Add(album);
+            }
+
+            return result;
+        }
     }
 }
