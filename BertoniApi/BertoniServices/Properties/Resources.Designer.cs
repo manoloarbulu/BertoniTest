@@ -61,42 +61,134 @@ namespace BertoniServices.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized string similar to [
+        ///  {
+        ///    &quot;userId&quot;: 1,
+        ///    &quot;id&quot;: 1,
+        ///    &quot;title&quot;: &quot;quidem molestiae enim&quot;
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 1,
+        ///    &quot;id&quot;: 2,
+        ///    &quot;title&quot;: &quot;sunt qui excepturi placeat culpa&quot;
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 1,
+        ///    &quot;id&quot;: 3,
+        ///    &quot;title&quot;: &quot;omnis laborum odio&quot;
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 1,
+        ///    &quot;id&quot;: 4,
+        ///    &quot;title&quot;: &quot;non esse culpa molestiae omnis sed optio&quot;
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 1,
+        ///    &quot;id&quot;: 5,
+        ///    &quot;title&quot;: &quot;eaque aut omnis a&quot;
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 1,
+        ///    &quot;id&quot;: 6,
+        ///    &quot;title&quot;: &quot;natus impedit quibusdam illo est&quot;
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 1, [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static byte[] Albums {
+        internal static string Albums {
             get {
-                object obj = ResourceManager.GetObject("Albums", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Albums", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized string similar to [
+        ///  {
+        ///    &quot;postId&quot;: 1,
+        ///    &quot;id&quot;: 1,
+        ///    &quot;name&quot;: &quot;id labore ex et quam laborum&quot;,
+        ///    &quot;email&quot;: &quot;Eliseo@gardner.biz&quot;,
+        ///    &quot;body&quot;: &quot;laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium&quot;
+        ///  },
+        ///  {
+        ///    &quot;postId&quot;: 1,
+        ///    &quot;id&quot;: 2,
+        ///    &quot;name&quot;: &quot;quo vero reiciendis velit similique earum&quot;,
+        ///    &quot;email&quot;: &quot;Jayne_Kuhic@sydney.com&quot;,
+        ///    &quot;body&quot;: &quot;est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod u [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static byte[] Comments {
+        internal static string Comments {
             get {
-                object obj = ResourceManager.GetObject("Comments", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Comments", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized string similar to [
+        ///  {
+        ///    &quot;albumId&quot;: 1,
+        ///    &quot;id&quot;: 1,
+        ///    &quot;title&quot;: &quot;accusamus beatae ad facilis cum similique qui sunt&quot;,
+        ///    &quot;url&quot;: &quot;http://placehold.it/600/92c952&quot;,
+        ///    &quot;thumbnailUrl&quot;: &quot;http://placehold.it/150/92c952&quot;
+        ///  },
+        ///  {
+        ///    &quot;albumId&quot;: 1,
+        ///    &quot;id&quot;: 2,
+        ///    &quot;title&quot;: &quot;reprehenderit est deserunt velit ipsam&quot;,
+        ///    &quot;url&quot;: &quot;http://placehold.it/600/771796&quot;,
+        ///    &quot;thumbnailUrl&quot;: &quot;http://placehold.it/150/771796&quot;
+        ///  },
+        ///  {
+        ///    &quot;albumId&quot;: 1,
+        ///    &quot;id&quot;: 3,
+        ///    &quot;title&quot;: &quot;officia porro iure quia iusto qui ipsa ut modi&quot;,
+        ///    &quot;url&quot;: &quot;ht [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static byte[] Photos {
+        internal static string Photos {
             get {
-                object obj = ResourceManager.GetObject("Photos", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Photos", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized string similar to [
+        ///  {
+        ///    &quot;userId&quot;: 1
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 2
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 3
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 4
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 5
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 6
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 7
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 8
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 9
+        ///  },
+        ///  {
+        ///    &quot;userId&quot;: 10
+        ///  }
+        ///]
+        ///.
         /// </summary>
-        internal static byte[] Users {
+        internal static string Users {
             get {
-                object obj = ResourceManager.GetObject("Users", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Users", resourceCulture);
             }
         }
     }

@@ -11,6 +11,13 @@ namespace BertoniApi
     {
         private readonly List<Usuario> _usuarios = new List<Usuario>();
 
+        [DataMember]
+        public Usuario this[int index]
+        {
+            get => _usuarios[index];
+            set => _usuarios[index] = value;
+        }
+
         #region Implementation of IEnumerable
 
         public IEnumerator<Usuario> GetEnumerator()

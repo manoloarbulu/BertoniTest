@@ -10,13 +10,8 @@ namespace BertoniApi
         [DataMember(Name = "userId", EmitDefaultValue = false, IsRequired = true)]
         public int Id { get; set; }
 
-        [DataMember(Name = "album")]
-        public AlbumCollection Albumes {
-            get
-            {
-                //TODO: get albumes from service
-                return null;
-            }
-        }
+        //TODO: Invoke Service to getting user Albums
+        [DataMember(Name = "album", EmitDefaultValue = false, IsRequired = false)]
+        public AlbumCollection Albumes { get; set; }
     }
 }

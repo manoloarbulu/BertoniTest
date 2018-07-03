@@ -1,5 +1,4 @@
-﻿using System.ServiceModel;
-using BertoniApi;
+﻿using BertoniApi;
 
 namespace BertoniServices
 {
